@@ -23,10 +23,10 @@ test<-cbind(subject_test,y_test,x_test)
 train<-cbind(subject_train,y_train,x_train)
 all<-rbind(test,train)
 all$activity<-activity[,2][match(all$activity,activity[,1])]
-write.table(all,file="all.csv")
+write.table(all,file="all.txt",row.name=FALSE)
 
 ##Generate a second tidy data set with the average of each variable for each activity and each subject
 ##"all_mean" is the second final tidy data
 library(dplyr)
 all_mean<-group_by(all,subject,activity) %>% summarise_each(funs(mean))
-write.table(all_mean,file="all_mean.csv")
+write.table(all_mean,file="all_mean.txt",row.name=FALSE)
