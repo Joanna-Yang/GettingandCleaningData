@@ -19,8 +19,7 @@ Files Included
 “README.txt” readme file
 “Code Book.txt”  codebook
 “run_analysis.R” R code
-“all.csv” tidy data generated from “run_analysis.R”
-“all_mean.csv” second tidy data generated from “run_analysis.R”
+“all_mean.txt” second tidy data generated from “run_analysis.R”
 
 
 Variable list 
